@@ -3,6 +3,7 @@ docker-compose
 gimp
 inkscape
 jre-openjdk
+mariadb
 nmap
 screenfetch
 speedcrunch
