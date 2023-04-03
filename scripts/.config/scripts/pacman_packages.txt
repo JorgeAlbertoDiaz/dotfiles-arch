@@ -1,0 +1,13 @@
+docker
+docker-compose
+gimp
+inkscape
+jre-openjdk
+nmap
+screenfetch
+speedcrunch
+speedtest-cli
+sshfs
+texlive-core
+tmux
+vim

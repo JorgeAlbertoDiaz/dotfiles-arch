@@ -1,0 +1,10 @@
+dbeaver
+django-python
+django-virtualenv
+google-chrome
+insomnia-bin
+mysql-workbench
+nvm
+obs-studio
+postman-bin
+visual-studio-code-bin
