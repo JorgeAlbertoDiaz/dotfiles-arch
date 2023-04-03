@@ -12,9 +12,12 @@
 
 /*
 Arc-Dark Color Scheme
-*/
+
 @define-color highlight #5294e2 ;
 @define-color base1  #404552 ;
+*/
+@define-color highlight #5294e2 ;
+@define-color base1  #101010;
 
 @keyframes blink-warning {
     70% {
@@ -54,7 +57,7 @@ Arc-Dark Color Scheme
 /* The whole bar */
 #waybar {
     background: transparent;
-    color: #bebebe;
+    color: #cecece;
     background-color: @base1;
     font-family: UbuntuMono;
     font-size: 14px;

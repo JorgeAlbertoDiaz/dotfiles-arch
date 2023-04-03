@@ -7,7 +7,8 @@ content=$(curl -sS "https://thisdavej.azurewebsites.net/api/weather/current?loc=
 ICON=$(curl -s 'https://wttr.in/?format=1' | sed 's/[+0-9a-cA-Z°-]//g' )
 # echo $ICON
 TEMP=$(echo $content | jq -r '. | "\(.temperature)°\(.degType)"' | sed 's/"//g')
-TOOLTIP=$(echo $content | jq -r '. | "\(.temperature)°\(.degType)\n\(.skytext)"' | sed 's/"//g')
+# TOOLTIP=$(echo $content | jq -r '. | "\(.temperature)°\(.degType)\n\(.skytext)\n\(.observationpoint)"' | sed 's/"//g')
+TOOLTIP=$(echo $content | jq -r '. | "\(.temperature)°\(.degType) - \n\(.observationpoint)"' | sed 's/"//g')
 CLASS=$(echo $content | jq .skytext)
-echo '{"text": "'$TEMP'", "tooltip": "'$ICON $TOOLTIP $LOC'", "class": '$CLASS' }'
+echo '{"text": "'$TEMP'", "tooltip": "'$ICON $TOOLTIP'", "class": '$CLASS' }'
 
